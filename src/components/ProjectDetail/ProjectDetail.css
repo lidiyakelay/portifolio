@@ -1,0 +1,53 @@
+.project-detail {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-detail__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the size as needed */
+    gap: 1em;
+  }
+  
+  .project-detail__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .project-detail__gallery {
+    /* Ensures no more than 4 images in a row */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  @media (min-width: 600px) {
+    .project-detail__gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row on small screens */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .project-detail__gallery {
+      grid-template-columns: repeat(3, 1fr); /* 3 images per row on medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .project-detail__gallery {
+      grid-template-columns: repeat(4, 1fr); /* 4 images per row on large screens */
+    }
+  }
+  .project-detail__back-link {
+    color: #2978b5;          /* Set the text color to #2978b5 */
+    font-size: 1.2rem;       /* Increase the font size */
+    font-weight: bold;       /* Make the text bold */
+    text-decoration: none;   /* Remove the underline */
+    cursor: pointer;         /* Change cursor to pointer */
+  }
+  
+  .project-detail__back-link:hover {
+    color: #1d5c8a;          /* Darker version of #2978b5 for hover */
+  }
+  

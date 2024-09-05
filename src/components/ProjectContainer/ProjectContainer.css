@@ -1,0 +1,46 @@
+.project {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project__image {
+  
+    width: 100%; /* Make the image fill the container's width */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 1920px; /* Ensure the image doesn't get stretched beyond 1920px */
+    max-height: 1080px; /* Ensure the image doesn't stretch beyond 1080px */
+    object-fit: cover; /* Makes sure the image covers the container while maintaining its aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for a better look */
+  /* Space below the image */
+}
+
+.project__description {
+  margin-top: 1em;
+}
+
+.project__stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+.project__stack-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+}
+
+.project .link--icon {
+  margin-left: 0.5em;
+}
