@@ -10,7 +10,7 @@ const about = {
   role: 'Flutter Mobile Application developer',
   description:
     'I am a skilled Flutter mobile app developer with experience building dynamic, user-friendly applications. I specialize in creating intuitive and responsive interfaces, ensuring smooth cross-platform performance, and delivering high-quality solutions for both Android and iOS. Passionate about clean code and design, I strive to develop apps that are not only functional but also visually appealing.',
-  resume: 'https://example.com',
+  resume: 'https://drive.google.com/file/d/17qq1sProEU6Q2VGHpSzCQphlSoJdFdpi/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/lidiya-kelay/',
     github: 'https://github.com/lidiyakelay',
@@ -64,16 +64,23 @@ const projects = [
   },
   {
     id: 'project3',
-    name: 'Project 3',
+    name: 'Tow Snitch',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
-    image: 'https://via.placeholder.com/300',
+      "Tow Snitch is an app that alerts users when a tow truck is nearby. Users can also update others about tow truck sightings. When 'Notify Me' is enabled, it sends alerts based on the user's set map radius for nearby trucks.",
+    stack: ['Flutter', 'Dart', 'Python','Firebase'],
+    sourceCode: 'https://github.com/lidiyakelay/towtruck_app',
+    image: 'https://res.cloudinary.com/ddduioads/image/upload/c_crop,w_1500,h_1125,ar_4:3,g_auto/v1725607526/Expense_Tracker_cover_4_lft6oy.png',
     images: [
-      { id: 'img1', url: 'https://via.placeholder.com/600x400' },
-      { id: 'img2', url: 'https://via.placeholder.com/600x400' }
+      { id: 'img1', url: 'https://res.cloudinary.com/ddduioads/image/upload/e_background_removal/c_crop,ar_9:16,f_png/v1725603821/Screenshot_2024-09-06_04_15_22_vdeeya.png' },
+      { id: 'img2', url: 'https://res.cloudinary.com/ddduioads/image/upload/e_background_removal/c_crop,ar_9:16,f_png/v1725603821/Screenshot_2024-09-06_04_15_30_eca1wd.png' },
+      { id: 'img3', url: 'https://res.cloudinary.com/ddduioads/image/upload/e_background_removal/c_crop,ar_9:16,f_png/v1725603821/Screenshot_2024-09-06_04_15_26_iyisve.png' },
+      { id: 'img4', url: 'https://res.cloudinary.com/ddduioads/image/upload/e_background_removal/c_crop,ar_9:16,f_png/v1725603821/Screenshot_2024-09-06_04_21_00_cvwr1i.png' },
+      { id: 'img5', url: 'https://res.cloudinary.com/ddduioads/image/upload/e_background_removal/c_crop,ar_9:16,f_png/v1725603822/Screenshot_2024-09-06_04_21_35_ym9gvf.png' },
+      { id: 'img6', url: 'https://res.cloudinary.com/ddduioads/image/upload/e_background_removal/c_crop,ar_9:16,f_png/v1725603822/Screenshot_2024-09-06_04_21_38_b3asv3.png' },
+      { id: 'img7', url: 'https://res.cloudinary.com/ddduioads/image/upload/e_background_removal/c_crop,ar_9:16,f_png/v1725603822/Screenshot_2024-09-06_04_21_40_wyabyo.png' },
+      { id: 'img8', url: 'https://res.cloudinary.com/ddduioads/image/upload/e_background_removal/c_crop,ar_9:16,f_png/v1725603821/Screenshot_2024-09-06_04_21_23_m9hhka.png' },
+      { id: 'img9', url: 'https://res.cloudinary.com/ddduioads/image/upload/e_background_removal/c_crop,ar_9:16,f_png/v1725603821/Screenshot_2024-09-06_04_22_30_ngthtb.png' },
+     
     ]
   }
 ];

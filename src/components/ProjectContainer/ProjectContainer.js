@@ -1,30 +1,28 @@
 import { useNavigate } from 'react-router-dom'; // Ensure this import is correct
 import GitHubIcon from '@material-ui/icons/GitHub';
-
 import './ProjectContainer.css';
 
 const ProjectContainer = ({ project }) => {
   const navigate = useNavigate();
 
-  const handleImageClick = () => {
+  const handleContainerClick = () => {
     navigate(`/project/${project.id}`);
   };
 
   return (
-    <div className='project'>
-      {/* Use a button or div with role="button" for accessibility */}
+    <div
+      className='project'
+      role="button"
+      tabIndex={0}
+      onClick={handleContainerClick}  // Now the whole container is clickable
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          handleContainerClick();
+        }
+      }}
+    >
       {project.image && (
-        <div
-          role="button"
-          tabIndex={0}
-          onClick={handleImageClick}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-              handleImageClick();
-            }
-          }}
-          className='project__image-container'
-        >
+        <div className='project__image-container'>
           <img
             src={project.image}
             alt={project.name}
@@ -36,6 +34,7 @@ const ProjectContainer = ({ project }) => {
       <h3>{project.name}</h3>
 
       <p className='project__description'>{project.description}</p>
+      
       {project.stack && (
         <ul className='project__stack'>
           {project.stack.map((item) => (
@@ -51,12 +50,11 @@ const ProjectContainer = ({ project }) => {
           href={project.sourceCode}
           aria-label='source code'
           className='link link--icon'
+          onClick={(e) => e.stopPropagation()} // Prevent the link click from navigating to the project detail page
         >
           <GitHubIcon />
         </a>
       )}
-
-      
     </div>
   );
 };
