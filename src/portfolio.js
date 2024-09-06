@@ -10,7 +10,7 @@ const about = {
   role: 'Flutter Mobile Application developer',
   description:
     'I am a skilled Flutter mobile app developer with experience building dynamic, user-friendly applications. I specialize in creating intuitive and responsive interfaces, ensuring smooth cross-platform performance, and delivering high-quality solutions for both Android and iOS. Passionate about clean code and design, I strive to develop apps that are not only functional but also visually appealing.',
-  resume: 'https://drive.google.com/file/d/17qq1sProEU6Q2VGHpSzCQphlSoJdFdpi/view?usp=sharing',
+  resume: 'https://drive.google.com/file/d/1imY6hj8w2VWQ3UhCA7rGtxzobWEqoC-f/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/lidiya-kelay/',
     github: 'https://github.com/lidiyakelay',
